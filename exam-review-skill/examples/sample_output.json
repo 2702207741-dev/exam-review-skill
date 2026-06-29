@@ -1,0 +1,710 @@
+{
+  "code": 0,
+  "message": "执行成功",
+  "data": {
+    "course_summary": {
+      "course_name": "Python 程序设计",
+      "knowledge_point_count": 14,
+      "high_freq_count": 0
+    },
+    "mind_map": {
+      "mermaid_string": "```mermaid\nmindmap\n  root((Python 程序设计 - 期末复习笔记))\n  第一章：基础语法\n    1.1 变量与数据类型\n    1.2 运算符\n    1.3 控制流\n  第二章：函数与模块\n    ★ 2.1 函数定义\n    2.2 作用域\n    2.3 模块与包\n  第三章：面向对象编程\n    3.1 类与对象\n    3.2 魔术方法\n    3.3 装饰器\n  常见错误与陷阱\n  ★ 考试重点总结\n```",
+      "json_structure": {
+        "name": "Python 程序设计 - 期末复习笔记",
+        "level": 1,
+        "importance": "low",
+        "children": [
+          {
+            "name": "第一章：基础语法",
+            "level": 2,
+            "importance": "low",
+            "children": [
+              {
+                "name": "1.1 变量与数据类型",
+                "level": 3,
+                "importance": "low",
+                "children": [],
+                "sources": [
+                  {
+                    "file_name": "examples/demo_notes.md",
+                    "page": null,
+                    "slide": null,
+                    "paragraph": 3,
+                    "priority": "high"
+                  }
+                ]
+              },
+              {
+                "name": "1.2 运算符",
+                "level": 3,
+                "importance": "low",
+                "children": [],
+                "sources": [
+                  {
+                    "file_name": "examples/demo_notes.md",
+                    "page": null,
+                    "slide": null,
+                    "paragraph": 16,
+                    "priority": "high"
+                  }
+                ]
+              },
+              {
+                "name": "1.3 控制流",
+                "level": 3,
+                "importance": "low",
+                "children": [],
+                "sources": [
+                  {
+                    "file_name": "examples/demo_notes.md",
+                    "page": null,
+                    "slide": null,
+                    "paragraph": 21,
+                    "priority": "high"
+                  }
+                ]
+              }
+            ],
+            "sources": [
+              {
+                "file_name": "examples/demo_notes.md",
+                "page": null,
+                "slide": null,
+                "paragraph": 2,
+                "priority": "high"
+              }
+            ]
+          },
+          {
+            "name": "第二章：函数与模块",
+            "level": 2,
+            "importance": "low",
+            "children": [
+              {
+                "name": "2.1 函数定义",
+                "level": 3,
+                "importance": "normal",
+                "children": [],
+                "sources": [
+                  {
+                    "file_name": "examples/demo_notes.md",
+                    "page": null,
+                    "slide": null,
+                    "paragraph": 29,
+                    "priority": "high"
+                  }
+                ]
+              },
+              {
+                "name": "2.2 作用域",
+                "level": 3,
+                "importance": "low",
+                "children": [],
+                "sources": [
+                  {
+                    "file_name": "examples/demo_notes.md",
+                    "page": null,
+                    "slide": null,
+                    "paragraph": 37,
+                    "priority": "high"
+                  }
+                ]
+              },
+              {
+                "name": "2.3 模块与包",
+                "level": 3,
+                "importance": "low",
+                "children": [],
+                "sources": [
+                  {
+                    "file_name": "examples/demo_notes.md",
+                    "page": null,
+                    "slide": null,
+                    "paragraph": 40,
+                    "priority": "high"
+                  }
+                ]
+              }
+            ],
+            "sources": [
+              {
+                "file_name": "examples/demo_notes.md",
+                "page": null,
+                "slide": null,
+                "paragraph": 28,
+                "priority": "high"
+              }
+            ]
+          },
+          {
+            "name": "第三章：面向对象编程",
+            "level": 2,
+            "importance": "low",
+            "children": [
+              {
+                "name": "3.1 类与对象",
+                "level": 3,
+                "importance": "low",
+                "children": [],
+                "sources": [
+                  {
+                    "file_name": "examples/demo_notes.md",
+                    "page": null,
+                    "slide": null,
+                    "paragraph": 46,
+                    "priority": "high"
+                  }
+                ]
+              },
+              {
+                "name": "3.2 魔术方法",
+                "level": 3,
+                "importance": "low",
+                "children": [],
+                "sources": [
+                  {
+                    "file_name": "examples/demo_notes.md",
+                    "page": null,
+                    "slide": null,
+                    "paragraph": 51,
+                    "priority": "high"
+                  }
+                ]
+              },
+              {
+                "name": "3.3 装饰器",
+                "level": 3,
+                "importance": "low",
+                "children": [],
+                "sources": [
+                  {
+                    "file_name": "examples/demo_notes.md",
+                    "page": null,
+                    "slide": null,
+                    "paragraph": 58,
+                    "priority": "high"
+                  }
+                ]
+              }
+            ],
+            "sources": [
+              {
+                "file_name": "examples/demo_notes.md",
+                "page": null,
+                "slide": null,
+                "paragraph": 45,
+                "priority": "high"
+              }
+            ]
+          },
+          {
+            "name": "常见错误与陷阱",
+            "level": 2,
+            "importance": "low",
+            "children": [],
+            "sources": [
+              {
+                "file_name": "examples/demo_notes.md",
+                "page": null,
+                "slide": null,
+                "paragraph": 60,
+                "priority": "high"
+              }
+            ]
+          },
+          {
+            "name": "考试重点总结",
+            "level": 2,
+            "importance": "normal",
+            "children": [],
+            "sources": [
+              {
+                "file_name": "examples/demo_notes.md",
+                "page": null,
+                "slide": null,
+                "paragraph": 65,
+                "priority": "high"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "file_name": "examples/demo_notes.md",
+            "page": null,
+            "slide": null,
+            "paragraph": 1,
+            "priority": "high"
+          }
+        ]
+      }
+    },
+    "review_materials": {
+      "basic_concepts": [
+        {
+          "id": "a30419803b25",
+          "name": "1.1 变量与数据类型",
+          "content": "Python 是动态类型语言，变量不需要声明类型。\n重点：Python 中一切皆对象，变量是对象的引用。\n常见数据类型：\n- int（整数）\n- float（浮点数）\n- str（字符串）\n- bool（布尔值）\n- list（列表）\n- tuple（元组）\n- dict（字典）\n- set（集合）\n注意：list 和 dict 是可变类型，tuple 和 str 是不可变类型。",
+          "level": 3,
+          "importance": "low",
+          "sources": [
+            {
+              "file_name": "examples/demo_notes.md",
+              "page": null,
+              "slide": null,
+              "paragraph": 3,
+              "priority": "high"
+            }
+          ]
+        },
+        {
+          "id": "ed41f6bfefc7",
+          "name": "1.2 运算符",
+          "content": "算术运算符：+ - / // % *\n比较运算符：== != > < >= <=\n逻辑运算符：and or not\n易混淆：==（值相等）vs is（同一对象）",
+          "level": 3,
+          "importance": "low",
+          "sources": [
+            {
+              "file_name": "examples/demo_notes.md",
+              "page": null,
+              "slide": null,
+              "paragraph": 16,
+              "priority": "high"
+            }
+          ]
+        },
+        {
+          "id": "6ef534353175",
+          "name": "1.3 控制流",
+          "content": "条件语句：\nif-elif-else 结构。Python 使用缩进表示代码块。\n循环语句：\n- for 循环：遍历可迭代对象\n- while 循环：条件为真时执行\n重点：break 终止循环，continue 跳过本次迭代。",
+          "level": 3,
+          "importance": "low",
+          "sources": [
+            {
+              "file_name": "examples/demo_notes.md",
+              "page": null,
+              "slide": null,
+              "paragraph": 21,
+              "priority": "high"
+            }
+          ]
+        },
+        {
+          "id": "afae8e3a6696",
+          "name": "2.1 函数定义",
+          "content": "参数类型：\n- 位置参数\n- 默认参数\n- 关键字参数\n- 可变参数 *args\n- 关键字可变参数 **kwargs\n易错点：默认参数只在函数定义时计算一次，可变默认参数（如 list）会导致意外行为。",
+          "level": 3,
+          "importance": "normal",
+          "sources": [
+            {
+              "file_name": "examples/demo_notes.md",
+              "page": null,
+              "slide": null,
+              "paragraph": 29,
+              "priority": "high"
+            }
+          ]
+        },
+        {
+          "id": "82b4ac5d8465",
+          "name": "2.2 作用域",
+          "content": "LEGB 规则：Local → Enclosing → Global → Built-in\n注意：在函数内修改全局变量需要使用 global 关键字。",
+          "level": 3,
+          "importance": "low",
+          "sources": [
+            {
+              "file_name": "examples/demo_notes.md",
+              "page": null,
+              "slide": null,
+              "paragraph": 37,
+              "priority": "high"
+            }
+          ]
+        },
+        {
+          "id": "e99051ed54d7",
+          "name": "2.3 模块与包",
+          "content": "- import module\n- from module import name\n- import module as alias\n重点：if __name__ == \"__main__\" 用于判断模块是被导入还是直接运行。",
+          "level": 3,
+          "importance": "low",
+          "sources": [
+            {
+              "file_name": "examples/demo_notes.md",
+              "page": null,
+              "slide": null,
+              "paragraph": 40,
+              "priority": "high"
+            }
+          ]
+        },
+        {
+          "id": "68d1728c222c",
+          "name": "3.1 类与对象",
+          "content": "核心概念：\n- 封装：将数据和方法绑定在一起\n- 继承：子类继承父类的属性和方法\n- 多态：不同类可以实现同名方法",
+          "level": 3,
+          "importance": "low",
+          "sources": [
+            {
+              "file_name": "examples/demo_notes.md",
+              "page": null,
+              "slide": null,
+              "paragraph": 46,
+              "priority": "high"
+            }
+          ]
+        },
+        {
+          "id": "7dd94906236b",
+          "name": "3.2 魔术方法",
+          "content": "- __init__：构造方法\n- __str__：字符串表示\n- __repr__：官方字符串表示\n- __len__：长度\n- __eq__：相等比较\n易混淆：__str__（给用户看）vs __repr__（给开发者看）",
+          "level": 3,
+          "importance": "low",
+          "sources": [
+            {
+              "file_name": "examples/demo_notes.md",
+              "page": null,
+              "slide": null,
+              "paragraph": 51,
+              "priority": "high"
+            }
+          ]
+        },
+        {
+          "id": "e9790e027666",
+          "name": "3.3 装饰器",
+          "content": "注意：@property 将方法变为属性访问，但不应包含复杂计算。",
+          "level": 3,
+          "importance": "low",
+          "sources": [
+            {
+              "file_name": "examples/demo_notes.md",
+              "page": null,
+              "slide": null,
+              "paragraph": 58,
+              "priority": "high"
+            }
+          ]
+        },
+        {
+          "id": "3430c48e9f66",
+          "name": "常见错误与陷阱",
+          "content": "误区1：修改列表时遍历列表 —— 应遍历副本\n误区2：可变类型作为默认参数\n误区3：在 except 块中不指定异常类型\n误区4：混淆浅拷贝与深拷贝",
+          "level": 2,
+          "importance": "low",
+          "sources": [
+            {
+              "file_name": "examples/demo_notes.md",
+              "page": null,
+              "slide": null,
+              "paragraph": 60,
+              "priority": "high"
+            }
+          ]
+        },
+        {
+          "id": "8e73702b30fb",
+          "name": "考试重点总结",
+          "content": "必考题型：\n1. 列表/字典推导式\n2. 装饰器实现\n3. 类的继承与多态\n4. 文件操作（with 语句）\n5. 异常处理（try-except-finally）",
+          "level": 2,
+          "importance": "normal",
+          "sources": [
+            {
+              "file_name": "examples/demo_notes.md",
+              "page": null,
+              "slide": null,
+              "paragraph": 65,
+              "priority": "high"
+            }
+          ]
+        }
+      ],
+      "high_freq_points": [
+        {
+          "name": "2.1 函数定义",
+          "frequency": "中频",
+          "core_content": "参数类型：\n- 位置参数\n- 默认参数\n- 关键字参数\n- 可变参数 *args\n- 关键字可变参数 **kwargs\n易错点：默认参数只在函数定义时计算一次，可变默认参数（如 list）会导致意外行为。",
+          "question_types": [
+            "名词解释",
+            "简答题"
+          ],
+          "sources": [
+            {
+              "file_name": "examples/demo_notes.md",
+              "page": null,
+              "slide": null,
+              "paragraph": 29,
+              "priority": "high"
+            }
+          ]
+        },
+        {
+          "name": "考试重点总结",
+          "frequency": "中频",
+          "core_content": "必考题型：\n1. 列表/字典推导式\n2. 装饰器实现\n3. 类的继承与多态\n4. 文件操作（with 语句）\n5. 异常处理（try-except-finally）",
+          "question_types": [
+            "简答题"
+          ],
+          "sources": [
+            {
+              "file_name": "examples/demo_notes.md",
+              "page": null,
+              "slide": null,
+              "paragraph": 65,
+              "priority": "high"
+            }
+          ]
+        },
+        {
+          "name": "1.1 变量与数据类型",
+          "frequency": "中频",
+          "core_content": "Python 是动态类型语言，变量不需要声明类型。\n重点：Python 中一切皆对象，变量是对象的引用。\n常见数据类型：\n- int（整数）\n- float（浮点数）\n- str（字符串）\n- bool（布尔值）\n- list（列表）\n- tuple（元组）\n- dict（字典）",
+          "question_types": [
+            "简答题"
+          ],
+          "sources": [
+            {
+              "file_name": "examples/demo_notes.md",
+              "page": null,
+              "slide": null,
+              "paragraph": 3,
+              "priority": "high"
+            }
+          ]
+        },
+        {
+          "name": "1.3 控制流",
+          "frequency": "中频",
+          "core_content": "条件语句：\nif-elif-else 结构。Python 使用缩进表示代码块。\n循环语句：\n- for 循环：遍历可迭代对象\n- while 循环：条件为真时执行\n重点：break 终止循环，continue 跳过本次迭代。",
+          "question_types": [
+            "简答题"
+          ],
+          "sources": [
+            {
+              "file_name": "examples/demo_notes.md",
+              "page": null,
+              "slide": null,
+              "paragraph": 21,
+              "priority": "high"
+            }
+          ]
+        }
+      ],
+      "error_prone_summary": [
+        {
+          "name": "1.1 变量与数据类型",
+          "type": "易错",
+          "description": "注意：list 和 dict 是可变类型，tuple 和 str 是不可变类型",
+          "comparison": null,
+          "sources": [
+            {
+              "file_name": "examples/demo_notes.md",
+              "page": null,
+              "slide": null,
+              "paragraph": 3,
+              "priority": "high"
+            }
+          ]
+        },
+        {
+          "name": "2.1 函数定义",
+          "type": "易错",
+          "description": "易错点：默认参数只在函数定义时计算一次，可变默认参数（如 list）会导致意外行为",
+          "comparison": null,
+          "sources": [
+            {
+              "file_name": "examples/demo_notes.md",
+              "page": null,
+              "slide": null,
+              "paragraph": 29,
+              "priority": "high"
+            }
+          ]
+        },
+        {
+          "name": "2.2 作用域",
+          "type": "易错",
+          "description": "注意：在函数内修改全局变量需要使用 global 关键字",
+          "comparison": null,
+          "sources": [
+            {
+              "file_name": "examples/demo_notes.md",
+              "page": null,
+              "slide": null,
+              "paragraph": 37,
+              "priority": "high"
+            }
+          ]
+        },
+        {
+          "name": "3.3 装饰器",
+          "type": "易错",
+          "description": "注意：@property 将方法变为属性访问，但不应包含复杂计算",
+          "comparison": null,
+          "sources": [
+            {
+              "file_name": "examples/demo_notes.md",
+              "page": null,
+              "slide": null,
+              "paragraph": 58,
+              "priority": "high"
+            }
+          ]
+        },
+        {
+          "name": "常见错误与陷阱",
+          "type": "易错",
+          "description": "误区1：修改列表时遍历列表 —— 应遍历副本",
+          "comparison": null,
+          "sources": [
+            {
+              "file_name": "examples/demo_notes.md",
+              "page": null,
+              "slide": null,
+              "paragraph": 60,
+              "priority": "high"
+            }
+          ]
+        }
+      ]
+    },
+    "source_trace": {
+      "d76d1ba07315": [
+        {
+          "file_name": "examples/demo_notes.md",
+          "page": null,
+          "slide": null,
+          "paragraph": 1,
+          "priority": "high"
+        }
+      ],
+      "44da7b5e3b72": [
+        {
+          "file_name": "examples/demo_notes.md",
+          "page": null,
+          "slide": null,
+          "paragraph": 2,
+          "priority": "high"
+        }
+      ],
+      "a30419803b25": [
+        {
+          "file_name": "examples/demo_notes.md",
+          "page": null,
+          "slide": null,
+          "paragraph": 3,
+          "priority": "high"
+        }
+      ],
+      "ed41f6bfefc7": [
+        {
+          "file_name": "examples/demo_notes.md",
+          "page": null,
+          "slide": null,
+          "paragraph": 16,
+          "priority": "high"
+        }
+      ],
+      "6ef534353175": [
+        {
+          "file_name": "examples/demo_notes.md",
+          "page": null,
+          "slide": null,
+          "paragraph": 21,
+          "priority": "high"
+        }
+      ],
+      "62e2c84e26d0": [
+        {
+          "file_name": "examples/demo_notes.md",
+          "page": null,
+          "slide": null,
+          "paragraph": 28,
+          "priority": "high"
+        }
+      ],
+      "afae8e3a6696": [
+        {
+          "file_name": "examples/demo_notes.md",
+          "page": null,
+          "slide": null,
+          "paragraph": 29,
+          "priority": "high"
+        }
+      ],
+      "82b4ac5d8465": [
+        {
+          "file_name": "examples/demo_notes.md",
+          "page": null,
+          "slide": null,
+          "paragraph": 37,
+          "priority": "high"
+        }
+      ],
+      "e99051ed54d7": [
+        {
+          "file_name": "examples/demo_notes.md",
+          "page": null,
+          "slide": null,
+          "paragraph": 40,
+          "priority": "high"
+        }
+      ],
+      "1567bcb4965b": [
+        {
+          "file_name": "examples/demo_notes.md",
+          "page": null,
+          "slide": null,
+          "paragraph": 45,
+          "priority": "high"
+        }
+      ],
+      "68d1728c222c": [
+        {
+          "file_name": "examples/demo_notes.md",
+          "page": null,
+          "slide": null,
+          "paragraph": 46,
+          "priority": "high"
+        }
+      ],
+      "7dd94906236b": [
+        {
+          "file_name": "examples/demo_notes.md",
+          "page": null,
+          "slide": null,
+          "paragraph": 51,
+          "priority": "high"
+        }
+      ],
+      "e9790e027666": [
+        {
+          "file_name": "examples/demo_notes.md",
+          "page": null,
+          "slide": null,
+          "paragraph": 58,
+          "priority": "high"
+        }
+      ],
+      "3430c48e9f66": [
+        {
+          "file_name": "examples/demo_notes.md",
+          "page": null,
+          "slide": null,
+          "paragraph": 60,
+          "priority": "high"
+        }
+      ],
+      "8e73702b30fb": [
+        {
+          "file_name": "examples/demo_notes.md",
+          "page": null,
+          "slide": null,
+          "paragraph": 65,
+          "priority": "high"
+        }
+      ]
+    },
+    "analysis_mode": "rule",
+    "knowledge_graph_html": "<!DOCTYPE html>\n<html lang=\"zh-CN\">\n<head>\n<meta charset=\"UTF-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n<title>知识图谱</title>\n<script src=\"https://d3js.org/d3.v7.min.js\"></script>\n<style>\n* { margin: 0; padding: 0; box-sizing: border-box; }\nbody { background: #0a0e27; color: #e0e0e0; font-family: -apple-system, sans-serif; overflow: hidden; }\nsvg { width: 100vw; height: 100vh; }\n.link { stroke-opacity: 0.6; }\n.node circle { stroke: #1a1a3e; stroke-width: 2px; cursor: pointer; }\n.node text { font-size: 12px; pointer-events: none; }\n.legend { position: fixed; top: 20px; right: 20px; background: rgba(10,14,39,0.9); border: 1px solid #333; border-radius: 8px; padding: 12px; font-size: 12px; z-index: 10; }\n.legend-item { display: flex; align-items: center; margin: 4px 0; }\n.legend-color { width: 12px; height: 12px; border-radius: 50%; margin-right: 8px; }\n.search { position: fixed; top: 20px; left: 20px; z-index: 10; }\n.search input { padding: 8px 12px; border-radius: 6px; border: 1px solid #555; background: rgba(10,14,39,0.9); color: #e0e0e0; width: 200px; }\n.tooltip { position: fixed; background: rgba(10,14,39,0.95); border: 1px solid #ffd54f; border-radius: 8px; padding: 12px; max-width: 300px; display: none; z-index: 100; font-size: 13px; }\n.stats { position: fixed; bottom: 20px; left: 20px; background: rgba(10,14,39,0.9); border: 1px solid #333; border-radius: 8px; padding: 10px; font-size: 11px; z-index: 10; }\n</style>\n</head>\n<body>\n<div class=\"search\"><input type=\"text\" id=\"searchInput\" placeholder=\"搜索知识点...\" /></div>\n<div class=\"legend\" id=\"legend\"></div>\n<div class=\"stats\" id=\"stats\"></div>\n<div class=\"tooltip\" id=\"tooltip\"></div>\n<svg id=\"graph\"></svg>\n\n<script>\nconst GRAPH_DATA = {\"nodes\": [{\"id\": \"8181ccc560d7\", \"name\": \"Python 程序设计 - 期末复习笔记\", \"type\": \"concept\", \"importance\": \"low\", \"content\": \"\", \"sources\": [{\"file_name\": \"examples/demo_notes.md\", \"page\": null, \"slide\": null, \"paragraph\": 1, \"priority\": \"high\"}], \"color\": \"#4FC3F7\", \"radius\": 18}, {\"id\": \"1fa6345df27a\", \"name\": \"第一章：基础语法\", \"type\": \"concept\", \"importance\": \"low\", \"content\": \"\", \"sources\": [{\"file_name\": \"examples/demo_notes.md\", \"page\": null, \"slide\": null, \"paragraph\": 2, \"priority\": \"high\"}], \"color\": \"#4FC3F7\", \"radius\": 18}, {\"id\": \"0b107b7ee9ac\", \"name\": \"1.1 变量与数据类型\", \"type\": \"concept\", \"importance\": \"low\", \"content\": \"Python 是动态类型语言，变量不需要声明类型。\\n重点：Python 中一切皆对象，变量是对象的引用。\\n常见数据类型：\\n- int（整数）\\n- float（浮点数）\\n- str（字符串）\\n- bool（布尔值）\\n- list（列表）\\n- tuple（元组）\\n- dict（字典）\", \"sources\": [{\"file_name\": \"examples/demo_notes.md\", \"page\": null, \"slide\": null, \"paragraph\": 3, \"priority\": \"high\"}], \"color\": \"#4FC3F7\", \"radius\": 18}, {\"id\": \"0546ec11e266\", \"name\": \"1.2 运算符\", \"type\": \"concept\", \"importance\": \"low\", \"content\": \"算术运算符：+ - / // % *\\n比较运算符：== != > < >= <=\\n逻辑运算符：and or not\\n易混淆：==（值相等）vs is（同一对象）\", \"sources\": [{\"file_name\": \"examples/demo_notes.md\", \"page\": null, \"slide\": null, \"paragraph\": 16, \"priority\": \"high\"}], \"color\": \"#4FC3F7\", \"radius\": 18}, {\"id\": \"a47e2be89b84\", \"name\": \"1.3 控制流\", \"type\": \"concept\", \"importance\": \"low\", \"content\": \"条件语句：\\nif-elif-else 结构。Python 使用缩进表示代码块。\\n循环语句：\\n- for 循环：遍历可迭代对象\\n- while 循环：条件为真时执行\\n重点：break 终止循环，continue 跳过本次迭代。\", \"sources\": [{\"file_name\": \"examples/demo_notes.md\", \"page\": null, \"slide\": null, \"paragraph\": 21, \"priority\": \"high\"}], \"color\": \"#4FC3F7\", \"radius\": 18}, {\"id\": \"936845aa2ede\", \"name\": \"第二章：函数与模块\", \"type\": \"concept\", \"importance\": \"low\", \"content\": \"\", \"sources\": [{\"file_name\": \"examples/demo_notes.md\", \"page\": null, \"slide\": null, \"paragraph\": 28, \"priority\": \"high\"}], \"color\": \"#4FC3F7\", \"radius\": 18}, {\"id\": \"a9f07b0661f3\", \"name\": \"2.1 函数定义\", \"type\": \"concept\", \"importance\": \"normal\", \"content\": \"参数类型：\\n- 位置参数\\n- 默认参数\\n- 关键字参数\\n- 可变参数 *args\\n- 关键字可变参数 **kwargs\\n易错点：默认参数只在函数定义时计算一次，可变默认参数（如 list）会导致意外行为。\", \"sources\": [{\"file_name\": \"examples/demo_notes.md\", \"page\": null, \"slide\": null, \"paragraph\": 29, \"priority\": \"high\"}], \"color\": \"#4FC3F7\", \"radius\": 26}, {\"id\": \"fea0d4efae3a\", \"name\": \"2.2 作用域\", \"type\": \"concept\", \"importance\": \"low\", \"content\": \"LEGB 规则：Local → Enclosing → Global → Built-in\\n注意：在函数内修改全局变量需要使用 global 关键字。\", \"sources\": [{\"file_name\": \"examples/demo_notes.md\", \"page\": null, \"slide\": null, \"paragraph\": 37, \"priority\": \"high\"}], \"color\": \"#4FC3F7\", \"radius\": 18}, {\"id\": \"de85b1217794\", \"name\": \"2.3 模块与包\", \"type\": \"concept\", \"importance\": \"low\", \"content\": \"- import module\\n- from module import name\\n- import module as alias\\n重点：if __name__ == \\\"__main__\\\" 用于判断模块是被导入还是直接运行。\", \"sources\": [{\"file_name\": \"examples/demo_notes.md\", \"page\": null, \"slide\": null, \"paragraph\": 40, \"priority\": \"high\"}], \"color\": \"#4FC3F7\", \"radius\": 18}, {\"id\": \"991575631b46\", \"name\": \"第三章：面向对象编程\", \"type\": \"concept\", \"importance\": \"low\", \"content\": \"\", \"sources\": [{\"file_name\": \"examples/demo_notes.md\", \"page\": null, \"slide\": null, \"paragraph\": 45, \"priority\": \"high\"}], \"color\": \"#4FC3F7\", \"radius\": 18}, {\"id\": \"b810329d1d69\", \"name\": \"3.1 类与对象\", \"type\": \"concept\", \"importance\": \"low\", \"content\": \"核心概念：\\n- 封装：将数据和方法绑定在一起\\n- 继承：子类继承父类的属性和方法\\n- 多态：不同类可以实现同名方法\", \"sources\": [{\"file_name\": \"examples/demo_notes.md\", \"page\": null, \"slide\": null, \"paragraph\": 46, \"priority\": \"high\"}], \"color\": \"#4FC3F7\", \"radius\": 18}, {\"id\": \"6748dcf2f442\", \"name\": \"3.2 魔术方法\", \"type\": \"concept\", \"importance\": \"low\", \"content\": \"- __init__：构造方法\\n- __str__：字符串表示\\n- __repr__：官方字符串表示\\n- __len__：长度\\n- __eq__：相等比较\\n易混淆：__str__（给用户看）vs __repr__（给开发者看）\", \"sources\": [{\"file_name\": \"examples/demo_notes.md\", \"page\": null, \"slide\": null, \"paragraph\": 51, \"priority\": \"high\"}], \"color\": \"#4FC3F7\", \"radius\": 18}, {\"id\": \"473bc841a042\", \"name\": \"3.3 装饰器\", \"type\": \"concept\", \"importance\": \"low\", \"content\": \"注意：@property 将方法变为属性访问，但不应包含复杂计算。\", \"sources\": [{\"file_name\": \"examples/demo_notes.md\", \"page\": null, \"slide\": null, \"paragraph\": 58, \"priority\": \"high\"}], \"color\": \"#4FC3F7\", \"radius\": 18}, {\"id\": \"67f261b3e5b0\", \"name\": \"常见错误与陷阱\", \"type\": \"concept\", \"importance\": \"low\", \"content\": \"误区1：修改列表时遍历列表 —— 应遍历副本\\n误区2：可变类型作为默认参数\\n误区3：在 except 块中不指定异常类型\\n误区4：混淆浅拷贝与深拷贝\", \"sources\": [{\"file_name\": \"examples/demo_notes.md\", \"page\": null, \"slide\": null, \"paragraph\": 60, \"priority\": \"high\"}], \"color\": \"#4FC3F7\", \"radius\": 18}, {\"id\": \"5d40ec5b961b\", \"name\": \"考试重点总结\", \"type\": \"concept\", \"importance\": \"normal\", \"content\": \"必考题型：\\n1. 列表/字典推导式\\n2. 装饰器实现\\n3. 类的继承与多态\\n4. 文件操作（with 语句）\\n5. 异常处理（try-except-finally）\", \"sources\": [{\"file_name\": \"examples/demo_notes.md\", \"page\": null, \"slide\": null, \"paragraph\": 65, \"priority\": \"high\"}], \"color\": \"#4FC3F7\", \"radius\": 26}], \"edges\": [{\"source\": \"8181ccc560d7\", \"target\": \"1fa6345df27a\", \"type\": \"CONTAINS\", \"weight\": 0.5, \"reason\": \"\", \"color\": \"#2196F3\", \"dash\": \"\"}, {\"source\": \"1fa6345df27a\", \"target\": \"0b107b7ee9ac\", \"type\": \"CONTAINS\", \"weight\": 0.5, \"reason\": \"\", \"color\": \"#2196F3\", \"dash\": \"\"}, {\"source\": \"1fa6345df27a\", \"target\": \"0546ec11e266\", \"type\": \"CONTAINS\", \"weight\": 0.5, \"reason\": \"\", \"color\": \"#2196F3\", \"dash\": \"\"}, {\"source\": \"1fa6345df27a\", \"target\": \"a47e2be89b84\", \"type\": \"CONTAINS\", \"weight\": 0.5, \"reason\": \"\", \"color\": \"#2196F3\", \"dash\": \"\"}, {\"source\": \"8181ccc560d7\", \"target\": \"936845aa2ede\", \"type\": \"CONTAINS\", \"weight\": 0.5, \"reason\": \"\", \"color\": \"#2196F3\", \"dash\": \"\"}, {\"source\": \"936845aa2ede\", \"target\": \"a9f07b0661f3\", \"type\": \"CONTAINS\", \"weight\": 0.5, \"reason\": \"\", \"color\": \"#2196F3\", \"dash\": \"\"}, {\"source\": \"936845aa2ede\", \"target\": \"fea0d4efae3a\", \"type\": \"CONTAINS\", \"weight\": 0.5, \"reason\": \"\", \"color\": \"#2196F3\", \"dash\": \"\"}, {\"source\": \"936845aa2ede\", \"target\": \"de85b1217794\", \"type\": \"CONTAINS\", \"weight\": 0.5, \"reason\": \"\", \"color\": \"#2196F3\", \"dash\": \"\"}, {\"source\": \"8181ccc560d7\", \"target\": \"991575631b46\", \"type\": \"CONTAINS\", \"weight\": 0.5, \"reason\": \"\", \"color\": \"#2196F3\", \"dash\": \"\"}, {\"source\": \"991575631b46\", \"target\": \"b810329d1d69\", \"type\": \"CONTAINS\", \"weight\": 0.5, \"reason\": \"\", \"color\": \"#2196F3\", \"dash\": \"\"}, {\"source\": \"991575631b46\", \"target\": \"6748dcf2f442\", \"type\": \"CONTAINS\", \"weight\": 0.5, \"reason\": \"\", \"color\": \"#2196F3\", \"dash\": \"\"}, {\"source\": \"991575631b46\", \"target\": \"473bc841a042\", \"type\": \"CONTAINS\", \"weight\": 0.5, \"reason\": \"\", \"color\": \"#2196F3\", \"dash\": \"\"}, {\"source\": \"8181ccc560d7\", \"target\": \"67f261b3e5b0\", \"type\": \"CONTAINS\", \"weight\": 0.5, \"reason\": \"\", \"color\": \"#2196F3\", \"dash\": \"\"}, {\"source\": \"8181ccc560d7\", \"target\": \"5d40ec5b961b\", \"type\": \"CONTAINS\", \"weight\": 0.5, \"reason\": \"\", \"color\": \"#2196F3\", \"dash\": \"\"}], \"stats\": {\"total_nodes\": 15, \"total_edges\": 14, \"node_types\": {\"concept\": 15}, \"importance_distribution\": {\"high\": 0, \"normal\": 2, \"low\": 13}, \"edge_types\": {\"CONTAINS\": 14}}, \"course_name\": \"Python 程序设计\"};\n\nconst svg = d3.select(\"#graph\");\nconst width = window.innerWidth;\nconst height = window.innerHeight;\nconst tooltip = d3.select(\"#tooltip\");\n\n// 图例\nconst legend = d3.select(\"#legend\");\nconst typeSet = new Map();\nGRAPH_DATA.nodes.forEach(n => { if (!typeSet.has(n.type)) typeSet.set(n.type, n.color); });\nlet legendHtml = '<b>图例</b>';\ntypeSet.forEach((color, type) => {\n    legendHtml += `<div class=\"legend-item\"><div class=\"legend-color\" style=\"background:${color}\"></div>${type}</div>`;\n});\nlegend.html(legendHtml);\n\n// 统计\nconst stats = GRAPH_DATA.stats || {};\nd3.select(\"#stats\").html(\n    `节点: ${stats.total_nodes || GRAPH_DATA.nodes.length} | 边: ${stats.total_edges || GRAPH_DATA.edges.length} | 课程: ${GRAPH_DATA.course_name || ''}`\n);\n\n// 力导向模拟\nconst simulation = d3.forceSimulation(GRAPH_DATA.nodes)\n    .force(\"link\", d3.forceLink(GRAPH_DATA.edges).id(d => d.id).distance(120))\n    .force(\"charge\", d3.forceManyBody().strength(-300))\n    .force(\"center\", d3.forceCenter(width / 2, height / 2))\n    .force(\"collision\", d3.forceCollide().radius(d => (d.radius || 15) + 5));\n\nconst g = svg.append(\"g\");\n\nconst link = g.append(\"g\").selectAll(\"line\")\n    .data(GRAPH_DATA.edges).join(\"line\")\n    .attr(\"class\", \"link\")\n    .attr(\"stroke\", d => d.color || \"#666\")\n    .attr(\"stroke-dasharray\", d => d.dash || \"\")\n    .attr(\"stroke-width\", d => 1 + (d.weight || 0.5) * 3);\n\nconst node = g.append(\"g\").selectAll(\"g\")\n    .data(GRAPH_DATA.nodes).join(\"g\")\n    .attr(\"class\", \"node\")\n    .call(d3.drag()\n        .on(\"start\", (event, d) => { if (!event.active) simulation.alphaTarget(0.3).restart(); d.fx = d.x; d.fy = d.y; })\n        .on(\"drag\", (event, d) => { d.fx = event.x; d.fy = event.y; })\n        .on(\"end\", (event, d) => { if (!event.active) simulation.alphaTarget(0); d.fx = null; d.fy = null; })\n    );\n\nnode.append(\"circle\")\n    .attr(\"r\", d => d.radius || 15)\n    .attr(\"fill\", d => d.color || \"#4FC3F7\")\n    .on(\"mouseover\", (event, d) => {\n        tooltip.style(\"display\", \"block\")\n            .html(`<b>${d.name}</b><br>类型: ${d.type}<br>重要度: ${d.importance}<br>${(d.content||'').slice(0,100)}`)\n            .style(\"left\", (event.pageX + 15) + \"px\")\n            .style(\"top\", (event.pageY - 15) + \"px\");\n    })\n    .on(\"mouseout\", () => tooltip.style(\"display\", \"none\"))\n    .on(\"dblclick\", (event, d) => {\n        simulation.force(\"x\", d3.forceX(d.x).strength(0.1));\n        simulation.force(\"y\", d3.forceY(d.y).strength(0.1));\n        simulation.alpha(0.5).restart();\n    });\n\nnode.append(\"text\")\n    .text(d => d.name.length > 12 ? d.name.slice(0,11) + '..' : d.name)\n    .attr(\"dy\", d => (d.radius || 15) + 14)\n    .attr(\"text-anchor\", \"middle\")\n    .attr(\"fill\", \"#ccc\");\n\nsimulation.on(\"tick\", () => {\n    link.attr(\"x1\", d => d.source.x).attr(\"y1\", d => d.source.y)\n        .attr(\"x2\", d => d.target.x).attr(\"y2\", d => d.target.y);\n    node.attr(\"transform\", d => `translate(${d.x},${d.y})`);\n});\n\n// 搜索高亮\nd3.select(\"#searchInput\").on(\"input\", function() {\n    const kw = this.value.toLowerCase();\n    node.select(\"circle\")\n        .attr(\"stroke\", d => d.name.toLowerCase().includes(kw) ? \"#ffd54f\" : \"#1a1a3e\")\n        .attr(\"stroke-width\", d => d.name.toLowerCase().includes(kw) ? 3 : 2);\n});\n\nwindow.addEventListener(\"resize\", () => {\n    svg.attr(\"width\", window.innerWidth).attr(\"height\", window.innerHeight);\n    simulation.force(\"center\", d3.forceCenter(window.innerWidth/2, window.innerHeight/2));\n    simulation.alpha(0.3).restart();\n});\n</script>\n</body>\n</html>\n"
+  }
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>知识图谱</title>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #0a0e27; color: #e0e0e0; font-family: -apple-system, sans-serif; overflow: hidden; }
+svg { width: 100vw; height: 100vh; }
+.link { stroke-opacity: 0.6; }
+.node circle { stroke: #1a1a3e; stroke-width: 2px; cursor: pointer; }
+.node text { font-size: 12px; pointer-events: none; }
+.legend { position: fixed; top: 20px; right: 20px; background: rgba(10,14,39,0.9); border: 1px solid #333; border-radius: 8px; padding: 12px; font-size: 12px; z-index: 10; }
+.legend-item { display: flex; align-items: center; margin: 4px 0; }
+.legend-color { width: 12px; height: 12px; border-radius: 50%; margin-right: 8px; }
+.search { position: fixed; top: 20px; left: 20px; z-index: 10; }
+.search input { padding: 8px 12px; border-radius: 6px; border: 1px solid #555; background: rgba(10,14,39,0.9); color: #e0e0e0; width: 200px; }
+.tooltip { position: fixed; background: rgba(10,14,39,0.95); border: 1px solid #ffd54f; border-radius: 8px; padding: 12px; max-width: 300px; display: none; z-index: 100; font-size: 13px; }
+.stats { position: fixed; bottom: 20px; left: 20px; background: rgba(10,14,39,0.9); border: 1px solid #333; border-radius: 8px; padding: 10px; font-size: 11px; z-index: 10; }
+</style>
+</head>
+<body>
+<div class="search"><input type="text" id="searchInput" placeholder="搜索知识点..." /></div>
+<div class="legend" id="legend"></div>
+<div class="stats" id="stats"></div>
+<div class="tooltip" id="tooltip"></div>
+<svg id="graph"></svg>
+
+<script>
+/* GRAPH_DATA_PLACEHOLDER */
+
+const svg = d3.select("#graph");
+const width = window.innerWidth;
+const height = window.innerHeight;
+const tooltip = d3.select("#tooltip");
+
+// 图例
+const legend = d3.select("#legend");
+const typeSet = new Map();
+GRAPH_DATA.nodes.forEach(n => { if (!typeSet.has(n.type)) typeSet.set(n.type, n.color); });
+let legendHtml = '<b>图例</b>';
+typeSet.forEach((color, type) => {
+    legendHtml += `<div class="legend-item"><div class="legend-color" style="background:${color}"></div>${type}</div>`;
+});
+legend.html(legendHtml);
+
+// 统计
+const stats = GRAPH_DATA.stats || {};
+d3.select("#stats").html(
+    `节点: ${stats.total_nodes || GRAPH_DATA.nodes.length} | 边: ${stats.total_edges || GRAPH_DATA.edges.length} | 课程: ${GRAPH_DATA.course_name || ''}`
+);
+
+// 力导向模拟
+const simulation = d3.forceSimulation(GRAPH_DATA.nodes)
+    .force("link", d3.forceLink(GRAPH_DATA.edges).id(d => d.id).distance(120))
+    .force("charge", d3.forceManyBody().strength(-300))
+    .force("center", d3.forceCenter(width / 2, height / 2))
+    .force("collision", d3.forceCollide().radius(d => (d.radius || 15) + 5));
+
+const g = svg.append("g");
+
+const link = g.append("g").selectAll("line")
+    .data(GRAPH_DATA.edges).join("line")
+    .attr("class", "link")
+    .attr("stroke", d => d.color || "#666")
+    .attr("stroke-dasharray", d => d.dash || "")
+    .attr("stroke-width", d => 1 + (d.weight || 0.5) * 3);
+
+const node = g.append("g").selectAll("g")
+    .data(GRAPH_DATA.nodes).join("g")
+    .attr("class", "node")
+    .call(d3.drag()
+        .on("start", (event, d) => { if (!event.active) simulation.alphaTarget(0.3).restart(); d.fx = d.x; d.fy = d.y; })
+        .on("drag", (event, d) => { d.fx = event.x; d.fy = event.y; })
+        .on("end", (event, d) => { if (!event.active) simulation.alphaTarget(0); d.fx = null; d.fy = null; })
+    );
+
+node.append("circle")
+    .attr("r", d => d.radius || 15)
+    .attr("fill", d => d.color || "#4FC3F7")
+    .on("mouseover", (event, d) => {
+        tooltip.style("display", "block")
+            .html(`<b>${d.name}</b><br>类型: ${d.type}<br>重要度: ${d.importance}<br>${(d.content||'').slice(0,100)}`)
+            .style("left", (event.pageX + 15) + "px")
+            .style("top", (event.pageY - 15) + "px");
+    })
+    .on("mouseout", () => tooltip.style("display", "none"))
+    .on("dblclick", (event, d) => {
+        simulation.force("x", d3.forceX(d.x).strength(0.1));
+        simulation.force("y", d3.forceY(d.y).strength(0.1));
+        simulation.alpha(0.5).restart();
+    });
+
+node.append("text")
+    .text(d => d.name.length > 12 ? d.name.slice(0,11) + '..' : d.name)
+    .attr("dy", d => (d.radius || 15) + 14)
+    .attr("text-anchor", "middle")
+    .attr("fill", "#ccc");
+
+simulation.on("tick", () => {
+    link.attr("x1", d => d.source.x).attr("y1", d => d.source.y)
+        .attr("x2", d => d.target.x).attr("y2", d => d.target.y);
+    node.attr("transform", d => `translate(${d.x},${d.y})`);
+});
+
+// 搜索高亮
+d3.select("#searchInput").on("input", function() {
+    const kw = this.value.toLowerCase();
+    node.select("circle")
+        .attr("stroke", d => d.name.toLowerCase().includes(kw) ? "#ffd54f" : "#1a1a3e")
+        .attr("stroke-width", d => d.name.toLowerCase().includes(kw) ? 3 : 2);
+});
+
+window.addEventListener("resize", () => {
+    svg.attr("width", window.innerWidth).attr("height", window.innerHeight);
+    simulation.force("center", d3.forceCenter(window.innerWidth/2, window.innerHeight/2));
+    simulation.alpha(0.3).restart();
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+python-pptx>=0.6.21
+python-docx>=1.1.0
+pdfplumber>=0.10.0
+markdown>=3.5
+pydantic>=2.0
+click>=8.1
+networkx>=3.2
+openai>=1.0
+
+[console]
+gradio>=4.0
+
+[dev]
+pytest>=7.4
+pytest-cov>=4.1
+
+[llm]

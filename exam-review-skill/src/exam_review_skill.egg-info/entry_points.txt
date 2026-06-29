@@ -1,0 +1,3 @@
+[console_scripts]
+exam-review = exam_review_skill.cli:cli
+exam-review-mcp = exam_review_skill.mcp_server.server:serve

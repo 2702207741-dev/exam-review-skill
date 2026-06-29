@@ -1,0 +1,103 @@
+# Exam Review Skill v2.0
+
+> AI Agent 期末复习知识整理 Skill — LLM 语义引擎 + 知识图谱 + MCP Server + Quick Console
+
+[![Python](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![Version](https://img.shields.io/badge/version-2.0.0-orange.svg)]()
+
+## v2.0 新特性
+
+- 🧠 **LLM 语义引擎** — DeepSeek API 驱动的知识点提取、关系发现、智能出题
+- 🕸️ **知识图谱** — NetworkX 图数据库 + D3.js 力导向图交互可视化
+- 🔌 **MCP Server** — 4 个 tool 暴露给 Claude Code / Agent 直接调用
+- 🖥️ **Quick Console** — Gradio 调试面板，上传→预览→生成→下载 四步走
+- 🔄 **Tier 1 离线降级** — 无 API 时自动切换到 v1 规则引擎
+
+## 快速开始
+
+```bash
+# 安装
+pip install -e .
+
+# CLI 三种模式
+exam-review input.json -o output.json    # 标准 JSON 输入
+exam-review --demo                       # 内置示例
+exam-review --mcp                        # 启动 MCP Server
+exam-review --console                    # 启动 Quick Console (http://localhost:7860)
+
+# MCP Server（给 Claude Desktop 用）
+exam-review-mcp
+```
+
+## 架构
+
+```
+exam-review-skill/
+├── src/exam_review_skill/
+│   ├── parser/          # 多格式解析（PPTX/DOCX/PDF/TXT/MD）
+│   ├── llm/             # ★ LLM 语义引擎（client/prompts/chunker/analyzer）
+│   ├── graph/           # ★ 知识图谱（models/builder/query/export + D3.js）
+│   ├── mcp_server/      # ★ MCP Server（4 tools）
+│   ├── console/         # ★ Quick Console（Gradio）
+│   ├── structurer/      # 规则引擎（Tier 1 fallback）
+│   ├── material/        # 复习资料生成
+│   ├── mindmap/         # Mermaid 思维导图
+│   ├── schema/          # Pydantic 数据模型
+│   └── utils/           # 工具函数
+├── tests/               # 单元测试（含 v2 新模块）
+├── examples/            # 示例
+└── docs/                # 文档
+```
+
+## 环境变量
+
+```bash
+# LLM 模式（可选，不设置则使用规则引擎）
+export DEEPSEEK_API_KEY=sk-your-key-here
+export DEEPSEEK_BASE_URL=https://api.deepseek.com   # 默认值
+export DEEPSEEK_MODEL=deepseek-chat                  # 默认值
+```
+
+## MCP 配置（Claude Desktop）
+
+```json
+{
+  "mcpServers": {
+    "exam-review": {
+      "command": "exam-review-mcp",
+      "args": []
+    }
+  }
+}
+```
+
+4 个 Tool：
+- `parse_material` — 解析素材提取知识点
+- `generate_review` — 一键生成复习资料
+- `query_knowledge_graph` — 查询知识图谱
+- `generate_questions` — 智能出题
+
+## Python API
+
+```python
+from exam_review_skill import run
+
+result = run({
+    "course_info": {"course_name": "Python 程序设计"},
+    "materials": [{"file_path": "notes.md", "file_type": "md"}],
+    "config": {
+        "analysis_mode": "llm",  # "llm" 或 "rule"
+        "mind_map_depth": 3,
+    },
+})
+
+# v2 额外字段
+print(result["data"]["analysis_mode"])        # "llm" 或 "rule"
+print(result["data"]["knowledge_graph_html"]) # D3.js HTML
+print(result["data"]["llm_relationships"])    # LLM 发现的关系
+```
+
+## 许可
+
+MIT License

@@ -1,0 +1,58 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "exam-review-skill"
+version = "2.0.0"
+description = "AI Agent 期末复习知识整理 Skill v2 — LLM 语义引擎 + 知识图谱 + MCP Server + Quick Console"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+authors = [
+    {name = "Exam Review Skill Contributors"}
+]
+keywords = ["exam", "review", "mindmap", "knowledge-graph", "ai-agent", "skill", "llm", "mcp"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Education",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "python-pptx>=0.6.21",
+    "python-docx>=1.1.0",
+    "pdfplumber>=0.10.0",
+    "markdown>=3.5",
+    "pydantic>=2.0",
+    "click>=8.1",
+    "networkx>=3.2",
+    "openai>=1.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4",
+    "pytest-cov>=4.1",
+]
+llm = [
+    # LLM 模式需要 openai，已在核心依赖中
+]
+console = [
+    "gradio>=4.0",
+]
+
+[project.scripts]
+exam-review = "exam_review_skill.cli:cli"
+exam-review-mcp = "exam_review_skill.mcp_server.server:serve"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-v --tb=short"
