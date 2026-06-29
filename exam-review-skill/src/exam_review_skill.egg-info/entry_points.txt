@@ -1,2 +1,0 @@
-[console_scripts]
-exam-review = exam_review_skill.cli:cli
