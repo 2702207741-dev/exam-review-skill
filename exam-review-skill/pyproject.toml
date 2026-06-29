@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "exam-review-skill"
+version = "1.0.0"
+description = "AI Agent 期末复习知识整理 Skill — 多格式素材解析、知识体系结构化、思维导图与分层复习资料生成"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+authors = [
+    {name = "Exam Review Skill Contributors"}
+]
+keywords = ["exam", "review", "mindmap", "knowledge-graph", "ai-agent", "skill"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Education",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "python-pptx>=0.6.21",
+    "python-docx>=1.1.0",
+    "pdfplumber>=0.10.0",
+    "markdown>=3.5",
+    "pydantic>=2.0",
+    "click>=8.1",
+    "jieba>=0.42",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4",
+    "pytest-cov>=4.1",
+]
+
+[project.scripts]
+exam-review = "exam_review_skill.cli:cli"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-v --tb=short"
